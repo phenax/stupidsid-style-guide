@@ -1,14 +1,25 @@
 
 # Styleguide
 
-___
-
 <br />
 
+### Extended from
+
+- [PSR-2 PHP standard](http://www.php-fig.org/psr/psr-2/)
+- [CakePHP standard](https://book.cakephp.org/3.0/en/contributing/cakephp-coding-conventions.html)
+- [Airbnb JS](https://github.com/phenax/javascript)
+- [Idiomatic CSS](https://github.com/phenax/idiomatic-css)
+
+
+
+
+<br /><br />
 
 ### Code style
 
-- Indentation
+- **Naming**
+
+- **Indentation**
     * Use 4 spaces for indentation.
     * Must not use extra spaces to align.
     * Indent for new blocks, array elements, method chaining.
