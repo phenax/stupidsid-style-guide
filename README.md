@@ -19,6 +19,17 @@
 
 - **Naming**
 
+- **Lines**
+    * Line length must be less than 90 characters long.
+    * Line soft limit is 120 characters
+    * Leave a blank line after a block starts.
+    * Curly brace opening or start of the block must be on the same line as the declaration.
+
+```php
+
+```
+
+
 - **Indentation**
     * Use 4 spaces for indentation.
     * Must not use extra spaces to align.
