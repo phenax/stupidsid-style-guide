@@ -13,7 +13,7 @@ ___
     * Must not use extra spaces to align.
     * Indent for new blocks, array elements, method chaining.
 
-Correct
+:white_check_mark: Correct
 ```php
 switch($someKey) {
     case 'hello': {
@@ -34,7 +34,7 @@ $query =
         ]);
 ```
 
-Wrong
+:x: Wrong
 ```php
 $query = $this->Institutes->find()
                           ->group('InstituteCourses.id')
