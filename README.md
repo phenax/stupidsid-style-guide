@@ -18,6 +18,8 @@
 ### Code style
 
 - **Naming**
+    * Variable and method names must be camel cased. Class names must be pascal cased.
+    * 
 
 - **Lines**
     * Line length must be less than 90 characters long.
@@ -25,25 +27,22 @@
     * Leave a blank line after a block starts.
     * Curly brace opening or start of the block must be on the same line as the declaration.
 
-```php
 
-```
-
-
-- **Indentation**
+- **Whitespaces**
     * Use 4 spaces for indentation.
-    * Must not use extra spaces to align.
+    * Must not use extra spaces to align indentation.
     * Indent for new blocks, array elements, method chaining.
+    * Must have spaces around operators.
 
 :white_check_mark: Correct
 ```php
 switch($someKey) {
     case 'hello': {
-        $instituteID= 1;
+        $instituteID = 1;
         break;
     }
     case 'world': {
-        $instituteID= 2;
+        $instituteID = 2;
         break;
     }
 }
@@ -58,6 +57,10 @@ $query =
 
 :x: Wrong
 ```php
+
+$hello= "world";
+$world ="hello";
+
 $query = $this->Institutes->find()
                           ->group('InstituteCourses.id')
                           ->where([ 'Institutes.id' => $iID ]);
