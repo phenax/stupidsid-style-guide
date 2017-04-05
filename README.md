@@ -20,7 +20,7 @@
 - **Naming**
     * Variable and method names must be camel cased. Class names must be pascal cased. For SCSS, use only dash casing for variable and mixins names and camel casing for function names.
     * No underscores for variable, method or class names(the only exception being '_' as a prefix for private and protected fields and methods).
-    * 
+    * CSS class naming will follow BEM and the directory structure for SCSS modules will follow atomic standard(atoms, molecules, quarks and utils).
 
 - **Lines**
     * Line length must be less than 90 characters long.
