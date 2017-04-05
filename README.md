@@ -18,7 +18,8 @@
 ### Code style
 
 - **Naming**
-    * Variable and method names must be camel cased. Class names must be pascal cased.
+    * Variable and method names must be camel cased. Class names must be pascal cased. For SCSS, use only dash casing for variable and mixins names and camel casing for function names.
+    * No underscores for variable, method or class names(the only exception being '_' as a prefix for private and protected fields and methods).
     * 
 
 - **Lines**
@@ -72,7 +73,7 @@ $query = $this->Institutes->find()
 
 
 ### Controllers
-* lorem ipsum
+* Methods that are not a route must be declared private or protected and must be prefixed with an '_'
 
 
 <br /><br />
