@@ -34,9 +34,14 @@
     * Must not use extra spaces to align indentation.
     * Indent for new blocks, array elements, method chaining.
     * Must have spaces around operators.
+    * No trailing whitespaces
 
 :white_check_mark: Correct
 ```php
+
+$hello = 'world';
+$world = 'hello';
+
 switch($someKey) {
     case 'hello': {
         $instituteID = 1;
@@ -59,8 +64,19 @@ $query =
 :x: Wrong
 ```php
 
-$hello= "world";
-$world ="hello";
+$hello= 'world';
+$world ='hello';
+
+switch($someKey) {
+  case 'hello': {
+      $instituteID = 1;
+        break;
+   }
+case 'world': {
+       $instituteID = 2;
+        break;
+}
+}
 
 $query = $this->Institutes->find()
                           ->group('InstituteCourses.id')
@@ -102,17 +118,23 @@ $query = $this->Institutes->find()
 Example -
 ```json
 {
-    "name": "stupidsid-admin",
-    "description": "Stupidsid admin panel",
-    "root": ".",
-    "directory": {
-        "php": "src",
-        "js": "static/js/",
-        "css": "static/css/"
+    "Name": "yocket",
+    "Description": "Yocket website",
+    "Paths": {
+        "css": "./static/css",
+        "js": "./static/js",
+        "php": "./src",
+        "root": "."
     },
-    "db_changes": {
-    	"notifications": "Added notifications table (id, name, content, sent_at, number_of_users)",
-    	"institutes": "app_id column added(TEXT)"
+    "Meta": {
+        "DB": {
+            "messages": "Added table",
+            "users": "Added column name varchar"
+    	},
+        "Branches": {
+            "forex": "Forex service orders",
+            "v-2.0.0": "The next version"
+        }
     }
 }
 ```
