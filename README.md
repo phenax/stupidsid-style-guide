@@ -15,7 +15,7 @@
 
 <br /><br />
 
-### Code style
+### General
 
 - **Naming**
     * Variable and method names must be camel cased. Class names must be pascal cased. For SCSS, use only dash casing for variable and mixins names and camel casing for function names.
@@ -87,22 +87,33 @@ $query = $this->Institutes->find()
 
 <br /><br />
 
+### PHP
 
-### Controllers
+#### Controllers
 * Methods that are not a route must be declared private or protected and must be prefixed with an '_'
 
 
 <br /><br />
 
-### Model
+#### Model
 
-#### Table
+##### Table
 * Methods starting with find and list (Eg - `findUniversities()`, `listSubjects()`, `listBySubjects()`) must return a query object.
 * Methods can also have by in the method name (Eg - `listBySubject(int $subjectID)`) if the emphasis is on the input rather than the output.
 * Methods starting with get (Eg - `getSubscription()`) must return an Entity.
 
-#### Entities
+##### Entities
 * lorem ipsum
+
+
+<br /><br />
+### JS
+
+#### Tools
+* Webpack for module bundling
+* Babel transpiler(presets: es2015, stage-0)
+* Flow for type checking
+* ESLint for linting
 
 
 
